@@ -36,10 +36,10 @@ The site reflects my skills, achievements, and journey as a student and develope
 - 🌐 Easy navigation with scroll-based UI
 
 
-💌 Contact Form
+## 💌 Contact Form
 The contact form uses Formspree to handle form submissions securely without a backend server.
 
-📸 Screenshots (optional)
+## 📸 Screenshots 
 <p align="center">
   <img src="screenshots/1.png" width="200" style="margin:10px;" alt="Project 1" />
   <img src="screenshots/2.png" width="200" style="margin:10px;" alt="Project 2" />
@@ -54,14 +54,10 @@ The contact form uses Formspree to handle form submissions securely without a ba
   <em>⭐ A constellation of my favorite works – from academic projects to creative self-learnings.</em>
 </p>
 
-
-📬 Connect with Me
-Made with ❤️ by Shalini Archana Vidanaarachchi
-
 <p align="center"> <a href="https://github.com/shaliniarchana" target="_blank" rel="noopener noreferrer"> <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.linkedin.com/in/shaliniarchana/" target="_blank" rel="noopener noreferrer"> <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> <a href="mailto:sliitshalini@gmail.com" target="_blank" rel="noopener noreferrer"> <img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> </a> </p>
 
 
-🎉 Final Words
+## 🎉 Final Words
 Thank you for visiting my portfolio!
 It reflects my journey, dedication, and continuous growth in the field of Software Engineering.
 
