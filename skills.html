@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Shalini Archana</title>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+
+  <style>
+  
+    .bg-teal {
+      background-color: #0D6073;
+    }
+    .text-lime {
+      color: #168C28;
+    }
+    .text-aqua {
+      color: #1C98A6;
+    }
+    .text-blue {
+      color: #077AE4;
+    }
+    .progress-bar {
+      transition: width 1s ease-in-out;
+    }
+    .card-skill {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .card-skill:hover {
+      transform: scale(1.05);
+    }
+    .section-title {
+      border-bottom: 3px solid #168C28;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-teal py-3 shadow-lg fixed-top">
+    <div class="container">
+    <a class="navbar-brand fs-3 fw-bold" href="home.html">I'm Shalini 😎</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item px-2"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item px-2"><a class="nav-link active" href="skills.html">Skills</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-blue section-title text-center">Technical Skills</h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4 text-center mb-5">
+
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalHTML">
+      <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
+      <h6>HTML5</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalCSS">
+      <i class="fab fa-css3-alt fa-3x text-primary mb-2"></i>
+      <h6>CSS3</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalJS">
+      <i class="fab fa-js fa-3x text-warning mb-2"></i>
+      <h6>JavaScript</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalReact">
+      <i class="fas fa-c fa-3x text-secondary mb-2"></i>
+      <h6>C</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalJava">
+      <i class="fab fa-java fa-3x text-warning mb-2"></i>
+      <h6>Java</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalBootstrap">
+      <i class="fab fa-bootstrap fa-3x text-purple mb-2"></i>
+      <h6>Bootstrap</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalPHP">
+      <i class="fab fa-php fa-3x text-indigo mb-2"></i>
+      <h6>PHP</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalMySQL">
+      <i class="fas fa-database fa-3x text-info mb-2"></i>
+      <h6>MySQL</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalFirebase">
+      <i class="fas fa-fire fa-3x text-warning mb-2"></i>
+      <h6>Firebase</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalFirestore">
+      <i class="fas fa-database fa-3x text-secondary mb-2"></i>
+      <h6>Firestore</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalNode">
+      <i class="fab fa-node-js fa-3x text-success mb-2"></i>
+      <h6>Node.js</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalGit">
+      <i class="fab fa-git-alt fa-3x text-danger mb-2"></i>
+      <h6>Git</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalGithub">
+      <i class="fab fa-github fa-3x text-dark mb-2"></i>
+      <h6>GitHub</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalAndroid">
+      <i class="fab fa-android fa-3x text-success mb-2"></i>
+      <h6>Android Studio</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalVSCode">
+      <i class="fas fa-code fa-3x text-info mb-2"></i>
+      <h6>VS Code</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalDreamweaver">
+      <i class="fas fa-laptop-code fa-3x text-primary mb-2"></i>
+      <h6>Dreamweaver</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalPowerBI">
+      <i class="fas fa-chart-bar fa-3x text-warning mb-2"></i>
+      <h6>Power BI</h6>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalWAMP">
+      <i class="fas fa-server fa-3x text-danger mb-2"></i>
+      <h6>WAMP Server</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalSelenium">
+      <i class="fas fa-cogs fa-3x text-secondary mb-2"></i>
+      <h6>Selenium IDE</h6>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalCPP">
+      <i class="fas fa-code fa-3x text-primary mb-2"></i>
+      <h6>C++</h6>
+    </div>
+  </div>
+</div>
+
+
+  
+      
+<div data-aos="fade-up">
+  <div class="mb-3">
+    <h6>HTML5 <span class="float-end">95%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #e44d26; width: 95%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>CSS3 <span class="float-end">85%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #264de4; width: 85%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Java <span class="float-end">75%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #f89820; width: 75%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>PHP <span class="float-end">90%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #8892be; width: 90%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Firebase <span class="float-end">95%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #f5820d; width: 95%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>MySQL <span class="float-end">95%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #00758f; width: 95%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>C <span class="float-end">75%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #A8B9CC; width: 75%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>C++ <span class="float-end">80%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #00599C; width: 80%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Android Studio<span class="float-end">98%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #3DDC84; width: 98%;"></div></div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+  <section class="bg-light py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-blue section-title text-center">Soft Skills</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center mb-4">
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Teamwork</h5>
+            <p>Works efficiently in team environments and collaborates across roles.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Time Management</h5>
+            <p>Effectively manages priorities and deadlines in fast-paced projects.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Communication</h5>
+            <p>Excellent verbal and written communication in academic and client-facing roles.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Problem Solving</h5>
+            <p>Able to analyze complex problems and find effective solutions independently.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Adaptability</h5>
+            <p>Quick to learn new tools, adapt to change, and handle unexpected challenges.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Leadership</h5>
+            <p>Experience leading teams and coordinating projects with clear guidance.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 text-center">
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Presenting</h5>
+            <p>Confident and clear presentation skills in professional and academic settings.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Fluent in Mathematics & Physics</h5>
+            <p>Strong foundational knowledge with the ability to apply concepts practically.</p>
+          </div>
+        </div>
+		  <div class="col">
+          <div class="card p-3 shadow-sm card-skill h-100">
+            <h5>Explore new things</h5>
+            <p>Curious about new things and willing to research about them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+
+ 
+  <div class="modal fade" id="skillModalHTML" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>HTML5</h5>
+        <p>Skilled in creating semantic, accessible, and responsive web pages using HTML5.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalCSS" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>CSS3</h5>
+        <p>Advanced CSS layouts using Flexbox, Grid, transitions, and animations.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalJS" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>JavaScript</h5>
+        <p>Experience with ES6+, DOM manipulation, events, and REST APIs.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalReact" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>React</h5>
+        <p>Building interactive SPAs with hooks, components, and state management.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalBootstrap" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Bootstrap</h5>
+        <p>Using Bootstrap classes and grid system for responsive design.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalNode" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Node.js</h5>
+        <p>Server-side scripting, Express.js, and backend development basics.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalMongo" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>MongoDB</h5>
+        <p>NoSQL database design, queries, and integration with Mongoose.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalGit" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Git</h5>
+        <p>Version control, branching, and collaboration using Git and GitHub.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Technical Skills Modals -->
+  <div class="modal fade" id="skillModalJava" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Java</h5>
+        <p>Object-oriented programming and application development in Java.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalPHP" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>PHP</h5>
+        <p>Server-side scripting and web development using PHP and MySQL.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalFirebase" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Firebase</h5>
+        <p>Realtime database, authentication, hosting, and cloud functions.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalFirestore" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Firestore</h5>
+        <p>Cloud NoSQL database for scalable, realtime app data management.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalAndroid" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Android Studio</h5>
+        <p>Android app development with Java/Kotlin, UI design, and testing.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalGithub" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>GitHub</h5>
+        <p>Code repository hosting, pull requests, and collaboration workflows.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalDreamweaver" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Dreamweaver</h5>
+        <p>Visual web design and development tool for creating responsive sites.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalVSCode" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Visual Studio Code</h5>
+        <p>Code editor with extensions, debugging, and Git integration.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalPowerBI" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>Power BI</h5>
+        <p>Data visualization and business intelligence reporting tools.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalR" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>R</h5>
+        <p>Statistical computing and graphics programming language.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="skillModalWAMP" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5>WAMP Server</h5>
+        <p>Windows Apache MySQL PHP server environment for web development.</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+	
+	<footer class="text-center py-3  text-white fixed-footer">
+    <p class="mb-0">&copy; 2025 Shalini Archana. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

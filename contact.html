@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Shalini Archana</title>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --blue-dark: #00008b;
+      --orange: #FFA500 ;
+      --teal: #0D6073;
+      --lime: #A1D929;
+      --aqua: #1C98A6;
+      --yellow: #F7C32C;
+    }
+    body {
+      background-color: #f6fcff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-teal {
+      background-color: var(--blue-dark) !important;
+    }
+    .text-green {
+      color: var(--orange);
+    }
+    .text-aqua {
+      color: var(--aqua);
+    }
+    .btn-orange {
+      background-color: var(--orange);
+      color: #000;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-orange:hover {
+      background-color: var(--yellow);
+      color: #000;
+    }
+    .contact-info {
+      background: #fff;
+      padding: 2rem 2rem 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 12px 30px rgba(22, 140, 40, 0.15);
+      height: 100%;
+    }
+    .contact-info h5 {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--lime);
+      padding-left: 1rem;
+      color: var(--aqua);
+    }
+    .contact-info p,
+    .contact-info a {
+      font-size: 1.05rem;
+      color: #212529;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: var(--lime);
+      text-decoration: underline;
+    }
+    .contact-info i {
+      width: 30px;
+      font-size: 1.3rem;
+      margin-right: 0.8rem;
+      color: var(--teal);
+    }
+    .social-icon {
+      font-size: 1.7rem;
+      margin-right: 1.2rem;
+      color: var(--aqua);
+      transition: color 0.3s ease;
+    }
+    .social-icon:hover {
+      color: var(--lime);
+    }
+    hr {
+      margin: 1.5rem 0;
+      border-top: 2px solid var(--aqua);
+      opacity: 0.2;
+    }
+	  
+	 
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+
+
+  </style>
+</head>
+<body>
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-teal py-3 shadow-lg fixed-top">
+    <div class="container">
+     <a class="navbar-brand fs-3 fw-bold" href="home.html" style="color: #D96109;">I'm Shalini 😎</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item px-2"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item px-2"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="position-relative" style="min-height: 100vh; overflow: hidden; padding: 3rem 0;">
+
+
+  <video autoplay muted loop playsinline 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+    <source src="videos/mistash.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+
+  <div class="container py-5 position-relative" style="background: rgba(255,255,255,0.9); border-radius: 15px; z-index: 1;">
+    <h2 class="text-center text-green mb-5 fw-bold">Get In Touch</h2>
+    <div class="row g-4">
+    
+      <div class="col-lg-4">
+        <div class="contact-info d-flex flex-column justify-content-center">
+          <h5>Contact Details</h5>
+          <p><i class="fas fa-map-marker-alt"></i> Katukurunda, Kalutara, Sri Lanka</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+94711108583">+94 71 110 8583</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:sliitshalini@gmail.com">sliitshalini@gmail.com</a></p>
+          <hr>
+          <h5>Follow Me</h5>
+          <div>
+            <a href="https://wa.me/94711108583" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:sliitshalini@gmail.com" class="social-icon" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/shaliniarchana" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/shalini-archana" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="p-4 shadow rounded bg-white">
+          <form action="https://formspree.io/f/xgvylovo" method="POST">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        <label for="name">Your Name</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" name="company" class="form-control" id="company" placeholder="Your Company">
+        <label for="company">Your Company</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+        <label for="email">Your Email</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-floating">
+        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+        <label for="subject">Subject</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea name="message" class="form-control" placeholder="Leave your message here" id="message" style="height: 150px" required></textarea>
+        <label for="message">Message</label>
+      </div>
+    </div>
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-orange px-4">Send Message</button>
+    </div>
+  </div>
+</form>
+
+        </div>
+      </div>
+
+    
+      <div class="col-12">
+        <div class="mt-4 shadow rounded overflow-hidden" style="height: 300px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.584272670892!2d79.9528051!3d6.6241306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597e1c12faab%3A0xe195e2149ee5a243!2s14%2F16%20Dharmarama%20Rd%2C%20Katukurunda%20South%2C%20Kalutara%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1687197567890!5m2!1sen!2slk"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ 
+<footer class="text-center py-3 bg-teal text-white fixed-footer">
+    <p class="mb-0">&copy; 2025 Shalini Archana. All Rights Reserved.</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+  window.addEventListener("pageshow", function (event) {
+    
+    if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
+      const form = document.querySelector("form");
+      if (form) form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+

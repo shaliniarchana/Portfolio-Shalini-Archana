@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Shalini Archana</title>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+	  .navbar-nav .nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  
+    .bg-video {
+      position: absolute;
+      top: 0; left: 0;
+      min-width: 100%; min-height: 100%;
+      object-fit: cover; z-index: 0;
+      opacity: 1; filter: blur(1.5px);
+      pointer-events: none;
+    }
+
+    .project-intro {
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+
+    .project-card img {
+      transition: transform 0.4s;
+      width: 100%; height: 200px; object-fit: cover;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-overlay-icons {
+      position: absolute; top: 12px; right: 12px;
+      display: flex; gap: 8px;
+    }
+
+    .card-overlay-icons a {
+      background: var(--teal); color: white;
+      border-radius: 50%; width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .card-overlay-icons a:hover {
+      background: var(--lime);
+      color: #032F40;
+      transform: scale(1.1);
+    }
+
+    .ribbon {
+      width: 130px;
+      background: var(--orange); color: white;
+      position: absolute; top: 14px; left: -35px;
+      text-align: center; line-height: 26px;
+      transform: rotate(-45deg);
+      font-weight: bold; font-size: 0.75rem;
+      z-index: 3;
+    }
+
+    .badge { font-size: 0.75rem; }
+    .tab-content { min-height: 600px; }
+  </style>
+</head>
+
+<body>
+<div class="d-flex flex-column min-vh-100">
+
+  
+ <nav class="navbar navbar-expand-lg navbar-dark bg-teal py-3 shadow-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-bold" href="home.html">I'm Shalini 😎</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="flex-grow-1">
+    <section class="py-5 position-relative overflow-hidden">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="videos/mist.mp4" type="video/mp4" />
+      </video>
+      <div class="container position-relative" style="z-index:2;">
+        <h2 class="text-center text-white display-5 fw-bold mb-3">🚀 My Projects</h2>
+        <p class="text-center mb-5 project-intro fs-5">Explore my work — from full-stack apps to stunning UI designs.</p>
+
+       
+        <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs" role="tablist">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#featured">Featured</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#web">Web</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#systems">Systems</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#mobileapps">Mobile Apps</button></li>
+        </ul>
+
+<div class="tab-content">
+
+ 
+  <div class="tab-pane fade show active" id="featured">
+    <div class="row g-4">
+ 
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj1Modal" data-aos="fade-up">
+          <div class="ribbon">🌟 Featured</div>
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/project1.png" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">💼 Diyan (Business Website)</h5>
+            <p class="card-text">Create & track orders, view cart & purchase history, user account creation & login.</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">PHP</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Web</span>
+              <span class="badge bg-aqua">Systems</span>
+              <span class="badge bg-aqua">Mobile Apps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="tab-pane fade" id="web">
+    <div class="row g-4">
+
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj2Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/project2.png" alt="Web Project 1">
+          <div class="card-body">
+            <h5 class="card-title">💻 JMC (E-Commerce Website)</h5>
+            <p class="card-text">Signup/signin, admin dashboard, product & employee management, delivery, reviews, reports.</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">Node.js</span>
+              <span class="badge bg-secondary me-1">PHP</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+              <span class="badge bg-secondary me-1">APIs</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj4Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/project1.png" alt="Web Project 2">
+          <div class="card-body">
+            <h5 class="card-title">🖥️ Diyan (Business Website)</h5>
+            <p class="card-text">Create & track orders, view cart & purchase history, user account creation & login.</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">PHP</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj5Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/project4.png" alt="Portfolio Website">
+          <div class="card-body">
+            <h5 class="card-title">🌐 Portfolio Website</h5>
+            <p class="card-text">Personal portfolio with projects, skills, blog, and contact form (email via Formspree).</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">Formspree</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade" id="systems">
+    <div class="row g-4">
+
+    
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj3Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/project3.png" alt="Systems Project 1">
+          <div class="card-body">
+            <h5 class="card-title">🏫 SLIIT Site (Management Website)</h5>
+            <p class="card-text">Add/search students, view SLIIT CITY UNI Webpage</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">AJAX</span>
+              <span class="badge bg-secondary me-1">REST API</span>
+              <span class="badge bg-secondary me-1">MongoDB</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">jQuery</span>
+              <span class="badge bg-secondary me-1">JSON</span>
+              <span class="badge bg-secondary me-1">Node.js</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj6Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/project5.png" alt="Inventory System">
+          <div class="card-body">
+            <h5 class="card-title">🚢 Shipp App (Supplier Management)</h5>
+            <p class="card-text">Supplier management system to add/delete/edit supplier details and spare parts details</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">Java</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+              <span class="badge bg-secondary me-1">WAMP Server</span>
+              <span class="badge bg-secondary me-1">NetBeans</span>
+              <span class="badge bg-secondary me-1">GitHub</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj7Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/pos.jpg" alt="POS System">
+          <div class="card-body">
+            <h5 class="card-title">🍴 BandiFull (Restaurant POS System)</h5>
+            <p class="card-text">Add items (quantity/type), payment method selection, generate bar codes, print bills</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+              <span class="badge bg-secondary me-1">NetBeans</span>
+              <span class="badge bg-secondary me-1">Java</span>
+              <span class="badge bg-secondary me-1">Swing UI</span>
+              <span class="badge bg-secondary me-1">MySQL</span>
+              <span class="badge bg-secondary me-1">AWT Printing API</span>
+            </div>
+            <div>
+              <span class="badge bg-aqua">Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+       <!-- Mobile Apps -->
+<div class="tab-pane fade" id="mobileapps">
+  <div class="row g-4">
+
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projHooKnows" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/hoo.jpg" alt="Quiz App">
+        <div class="card-body">
+          <h5 class="card-title">🧠 HooKnows Quiz App</h5>
+          <p class="card-text">An interactive quiz app with categorized questions, scoring, and a fun owl-themed interface.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">Firebase</span>
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projSnake" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/one.jpg" alt="Snake Bite App">
+        <div class="card-body">
+          <h5 class="card-title">🐍 Snake Bite App</h5>
+          <p class="card-text">An emergency response app providing first-aid tips and location info during snakebite incidents.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projDiyana" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/diyan.jpg" alt="Diyana Water App">
+        <div class="card-body">
+          <h5 class="card-title">💧 Diyana Bottled Water App</h5>
+          <p class="card-text">A delivery and inventory management app for bottled drinking water suppliers.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">WebView</span>
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projSamanala" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/samanala.jpg" alt="Samanala Printers App">
+        <div class="card-body">
+          <h5 class="card-title">🖨️ Samanala Printers App</h5>
+          <p class="card-text">Order and payment tracking app for a local printing business, with order previews and status updates.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">WebView</span>
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projHappyTick" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/happy.jpg" alt="Happy Tick App">
+        <div class="card-body">
+          <h5 class="card-title">✅ Happy Tick App</h5>
+          <p class="card-text">A personal to-do and habit tracking app that motivates users with fun visuals and reminders.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Firebase</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projSmartCal" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/cal.jpg" alt="Smart Cal App">
+        <div class="card-body">
+          <h5 class="card-title">🧮 Smart Cal App</h5>
+          <p class="card-text">A lightweight smart calculator app with unit conversion, history, and simple scientific functions.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projTicTacToe" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/tic.jpg" alt="Tic Tac Toe App">
+        <div class="card-body">
+          <h5 class="card-title">❌⭕ Tic Tac Toe App</h5>
+          <p class="card-text">Classic Tic Tac Toe game developed using Java with Android APIs.</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+  
+ 
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj10Modal" data-aos="fade-up">
+        <div class="card-overlay-icons">
+          <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <img src="images/aero.jpg" alt="Aero Wave App">
+        <div class="card-body">
+          <h5 class="card-title">✈️ Aero Wave App</h5>
+          <p class="card-text">An app to browse internet</p>
+          <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">WebView</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+          <div><span class="badge bg-aqua">Mobile Apps</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+
+  
+  <div class="modal fade" id="proj1Modal" tabindex="-1" aria-labelledby="proj1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj1Label">🖥️ Diyan (Business Website)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/project1.png" class="img-fluid rounded mb-3" alt="Project 1 Screenshot">
+          <p><strong>Description:</strong> A modern and fully responsive business website built with Bootstrap, PHP, and MySQL.</p>
+          <ul>
+          <li>✅ Create order & track order</li>
+          <li>✅ View cart and purchase history</li>
+          <li>✅ User account creation and login</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">PHP</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+            </div>
+          <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="proj2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj2Label">💻 JMC (E-Commerce Website)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/project2.png" class="img-fluid rounded mb-3" alt="Project 2 Screenshot">
+          <p><strong>Description:</strong> A full-stack e-commerce web application demonstrating front-end and back-end integration.</p>
+          <ul>
+          <li>✅ Signup / Signin</li>
+          <li>✅ Admin dashboard</li>
+          <li>✅ Product, employee, delivery & user management</li>
+          <li>✅ Reviews and report generation</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">Node.js</span>
+              <span class="badge bg-secondary me-1">PHP</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+              <span class="badge bg-secondary me-1">APIs</span>
+            </div>
+        <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="modal fade" id="proj3Modal" tabindex="-1" aria-labelledby="proj3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj3Label">🏫 SLIIT Site (Management Website)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/project3.png" class="img-fluid rounded mb-3" alt="Project 3 Screenshot">
+          <p><strong>Description:</strong> A secure backend management system focused on data integrity and efficient workflows.</p>
+          <ul>
+          <li>✅ Add and search students</li>
+          <li>✅ AJAX and REST API integration</li>
+          <li>✅ MongoDB database with Bootstrap and jQuery</li>
+          <li>✅ Backend development with Node.js</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		  <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">AJAX</span>
+              <span class="badge bg-secondary me-1">REST API</span>
+              <span class="badge bg-secondary me-1">MongoDB</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">jQuery</span>
+              <span class="badge bg-secondary me-1">JSON</span>
+              <span class="badge bg-secondary me-1">Node.js</span>
+            </div>
+         <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="proj4Modal" tabindex="-1" aria-labelledby="proj4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj4Label">💻 Diyan (Business Website)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/project1.png" class="img-fluid rounded mb-3" alt="Project 4 Screenshot">
+          <p><strong>Description:</strong> A modern and fully responsive business website built with Bootstrap, PHP, and MySQL.</p>
+          <ul>
+          <li>✅ Create order & track order</li>
+          <li>✅ View cart and purchase history</li>
+          <li>✅ User account creation and login</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		 <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">PHP</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+            </div>
+         <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="modal fade" id="proj5Modal" tabindex="-1" aria-labelledby="proj5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj5Label">🌐 Portfolio Website</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/project4.png" class="img-fluid rounded mb-3" alt="Project 5 Screenshot">
+          <p><strong>Description:</strong> Personal portfolio showcasing projects, skills, and blog posts with React and TailwindCSS.</p>
+          <ul>
+          <li>✅ Responsive design</li>
+          <li>✅ Interactive UI</li>
+          <li>✅ Blog integration and email sending with Formspree</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		 <div class="mt-2">
+              <span class="badge bg-secondary me-1">HTML</span>
+              <span class="badge bg-secondary me-1">CSS</span>
+              <span class="badge bg-secondary me-1">JavaScript</span>
+              <span class="badge bg-secondary me-1">Bootstrap</span>
+              <span class="badge bg-secondary me-1">Formspree</span>
+            </div>
+        <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="modal fade" id="proj6Modal" tabindex="-1" aria-labelledby="proj6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj6Label">🚢 Shipp App (Supplier Management)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/project5.png" class="img-fluid rounded mb-3" alt="Project 6 Screenshot">
+          <p><strong>Description:</strong> An inventory management system to track stock and orders with real-time updates.</p>
+          <ul>
+          <li>✅ Supplier management</li>
+          <li>✅ SQL database with WAMP server locally</li>
+          <li>✅ Developed using Java and NetBeans</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		  <div class="mt-2">
+              <span class="badge bg-secondary me-1">Java</span>
+              <span class="badge bg-secondary me-1">SQL</span>
+              <span class="badge bg-secondary me-1">WAMP Server</span>
+              <span class="badge bg-secondary me-1">NetBeans</span>
+              <span class="badge bg-secondary me-1">GitHub</span>
+            </div>
+         <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="proj7Modal" tabindex="-1" aria-labelledby="proj7Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-teal text-white">
+        <h5 class="modal-title" id="proj7Label">🍴 BandiFull (Restaurant POS System)</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/pos.jpg" class="img-fluid rounded mb-3" alt="Project 7 Screenshot">
+        <p><strong>Description:</strong> Comprehensive POS system integrating sales, inventory, customer management, and real-time transaction tracking to streamline retail operations.</p>
+        <ul>
+          <li>✅ Add items with quantity and type</li>
+          <li>✅ Select payment methods</li>
+          <li>✅ Print bills using Java Swing and AWT Printing API</li>
+          <li>✅ MySQL database integration</li>
+        </ul>
+		  <p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+              <span class="badge bg-secondary me-1">NetBeans</span>
+              <span class="badge bg-secondary me-1">Java</span>
+              <span class="badge bg-secondary me-1">Swing UI</span>
+              <span class="badge bg-secondary me-1">MySQL</span>
+              <span class="badge bg-secondary me-1">AWT Printing API</span>
+            </div>
+       <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="projHooKnows" tabindex="-1" aria-labelledby="projHooKnowsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projHooKnowsLabel">🧠 HooKnows Quiz App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/hoo.jpg" class="img-fluid mb-3" alt="HooKnows App">
+        <p>A fun and interactive mobile quiz app with different categories and difficulty levels. Tracks score, shows explanations, and features an engaging owl-themed interface for learning through play.</p>
+		  <ul>
+          <li>✅ View quiz score</li>
+          <li>✅ Track completion time</li>
+          <li>✅ Share score and time</li>
+          <li>✅ Integrated sound effects</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		  <div class="mt-2">
+            <span class="badge bg-secondary me-1">Firebase</span>
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="projSnake" tabindex="-1" aria-labelledby="projSnakeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projSnakeLabel">🐍 Snake Bite App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/one.jpg" class="img-fluid mb-3" alt="Snake Bite App">
+        <p>This app provides essential first-aid steps and emergency contact options for snakebite victims. It features location tracking, danger zone alerts, and local hospital directions.</p>
+		   <ul>
+          <li>✅ Pause/resume guidance</li>
+          <li>✅ Unlock achievements</li>
+          <li>✅ Audio instructions</li>
+          <li>✅ View score</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		  <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="projDiyana" tabindex="-1" aria-labelledby="projDiyanaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projDiyanaLabel">💧 Diyana Bottled Water App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/diyan.jpg" class="img-fluid mb-3" alt="Diyana Bottled Water App">
+        <p>This app streamlines order placements and delivery tracking for bottled water services. Customers can order, schedule deliveries, and track order status while the admin manages inventory.</p>
+		  <ul>
+          <li>✅ Browse and use website inside app</li>
+          <li>✅ No need for external browser</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+            <span class="badge bg-secondary me-1">WebView</span>
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="projSamanala" tabindex="-1" aria-labelledby="projSamanalaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projSamanalaLabel">🖨️ Samanala Printers App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/samanala.jpg" class="img-fluid mb-3" alt="Samanala Printers App">
+        <p>This mobile app helps customers place print orders, upload documents, and get real-time order updates from Samanala Printers. Admin can track orders and update status through a simple backend interface.</p>
+		  <ul>
+          <li>✅ Use website through in-app browser</li>
+          <li>✅ Smooth navigation inside app</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+            <span class="badge bg-secondary me-1">WebView</span>
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="projHappyTick" tabindex="-1" aria-labelledby="projHappyTickLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projHappyTickLabel">✅ Happy Tick App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/happy.jpg" class="img-fluid mb-3" alt="Happy Tick App">
+        <p>A minimalist productivity and habit tracking app. Users can add daily tasks, check them off with satisfying animations, and track streaks to stay motivated.</p>
+		  <ul>
+          <li>✅ Create user account</li>
+          <li>✅ Add, edit, and delete tasks</li>
+          <li>✅ Mark tasks as completed</li>
+          <li>✅ Drag and drop to reorder</li>
+          <li>✅ Swipe to delete or edit tasks</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Firebase</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="projSmartCal" tabindex="-1" aria-labelledby="projSmartCalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projSmartCalLabel">🧮 Smart Cal App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/cal.jpg" class="img-fluid mb-3" alt="Smart Cal App">
+        <p>This smart calculator app features unit conversion, history tracking, basic scientific operations, and a sleek user interface optimized for mobile use.</p>
+		  <ul>
+          <li>✅ Basic math functions</li>
+          <li>✅ Scientific calculator functions (15+)</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<div class="modal fade" id="projTicTacToe" tabindex="-1" aria-labelledby="projTicTacToeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projTicTacToeLabel">❌⭕ Tic Tac Toe Game</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/tic.jpg" class="img-fluid mb-3" alt="Tic Tac Toe App">
+        <p>Classic two-player game app with fun visuals and audio feedback for player actions and game results.</p>
+		  <ul>
+          <li>✅ Two-player game mode</li>
+          <li>✅ Custom player name input</li>
+          <li>✅ Audio effects for moves and results</li>
+          <li>✅ Displays win/lose/draw messages</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+            <span class="badge bg-secondary me-1">Java</span>
+            <span class="badge bg-secondary me-1">Android Studio</span>
+            <span class="badge bg-secondary me-1">Android API</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="proj10Modal" tabindex="-1" aria-labelledby="proj10ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="proj10ModalLabel">✈️ Aero Wave App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/aero.jpg" class="img-fluid mb-3" alt="Aero Wave App">
+        <p>A mobile app that helps users explore, compare, and book travel options with personalized recommendations, secure payments, and itinerary saving features.</p>
+		   <ul>
+          <li>✅ Acts as a travel-focused web browser</li>
+          <li>✅ Loads any external travel content</li>
+        </ul>
+        <p><strong>Technologies:</strong></p>
+		   <div class="mb-2">
+          <span class="badge bg-secondary me-1">Java</span>
+          <span class="badge bg-secondary me-1">Android Studio</span>
+          <span class="badge bg-secondary me-1">Firebase</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <footer class="text-center py-3 bg-teal text-white fixed-footer">
+    <div class="container">
+        <p class="mb-0">&copy; 2025 Shalini Archana. Crafted with ❤️ using HTML, CSS & Bootstrap.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+</script>
+
+</body>
+</html>
