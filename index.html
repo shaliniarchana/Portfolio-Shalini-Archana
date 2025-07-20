@@ -8,6 +8,152 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+
+    body {
+  padding-top: 80px; 
+  padding-bottom: 60px; 
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); 
+  z-index: 1;
+}
+
+.bg-teal {
+  background-color: #00008b !important; 
+}
+
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+.decor-decoration {
+  position: absolute;
+  max-width: 150px;
+  opacity: 0.2;
+  pointer-events: none;
+  user-select: none;
+}
+
+.decor-top-left {
+  top: 0;
+  left: 0;
+}
+
+.decor-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .decor-decoration {
+    display: none; 
+  }
+}
+
+body {
+  padding-bottom: 60px; 
+}
+
+
+footer.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+
+.btn-primary {
+  background-color: #00008b !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00006b !important;
+}
+
+.btn-accent {
+  background-color: #FFA500 !important;
+  border: none;
+  color: #fff !important;
+}
+
+.btn-accent:hover {
+  background-color: #FDBA74 !important;
+}
+
+
+h1.display-4 {
+  font-size: 2.5rem;
+}
+@media (max-width: 576px) {
+  .w-75 {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  h1.display-4 {
+    font-size: 2rem;
+  }
+  
+  p.lead {
+    font-size: 1rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+  </style>
 </head>
 <body>
 
@@ -15,7 +161,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-teal py-3 shadow-lg fixed-top">
 
     <div class="container">
-     <a class="navbar-brand fs-3 fw-bold" href="home.html">I'm Shalini 😎</a>
+     <a class="navbar-brand fs-3 fw-bold" href="index.html">I'm Shalini 😎</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>

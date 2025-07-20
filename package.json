@@ -1,0 +1,30 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Shalini Archana's Personal Portfolio Website",
+  "scripts": {
+    "start": "live-server .",
+    "build": "echo 'No build step needed for static site'"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaliniarchana/Portfolio-Shalini-Archana.git"
+  },
+  "keywords": [
+    "portfolio",
+    "html",
+    "css",
+    "javascript",
+    "shalini",
+    "bootstrap"
+  ],
+  "author": "Shalini Archana",
+  "license": "ISC",
+  "homepage": "https://github.com/shaliniarchana/Portfolio-Shalini-Archana#readme",
+  "bugs": {
+    "url": "https://github.com/shaliniarchana/Portfolio-Shalini-Archana/issues"
+  }
+}
