@@ -28,6 +28,7 @@ The site reflects my skills, achievements, and journey as a student and develope
 
 ## 🖼️ Features
 
+- 📱 Mobile Responsive 
 - 💡 Clean and modern design with **Bootstrap** styling
 - 🧑‍💼 Portfolio section listing all types of projects
 - ✉️ Contact form powered by **Formspree**
