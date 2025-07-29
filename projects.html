@@ -137,6 +137,19 @@
 
     .badge { font-size: 0.75rem; }
     .tab-content { min-height: 600px; }
+
+    @keyframes blue-burning {
+  0% { box-shadow: 0 0 20px #00bfff, 0 0 5px #00bfff inset; }
+  50% { box-shadow: 0 0 50px #1e90ff, 0 0 15px #1e90ff inset; }
+  100% { box-shadow: 0 0 20px #00bfff, 0 0 5px #00bfff inset; }
+}
+
+.animate-blue-burning {
+  animation: blue-burning 3.5s infinite ease-in-out;
+  border: 2px solid #00bfff;
+  border-radius: 12px;
+}
+
   </style>
 </head>
 
@@ -171,7 +184,7 @@
       </video>
       <div class="container position-relative" style="z-index:2;">
         <h2 class="text-center text-white display-5 fw-bold mb-3">🚀 My Projects</h2>
-        <p class="text-center mb-5 project-intro fs-5">Explore my work — from full-stack apps to stunning UI designs.</p>
+        <p class="text-center mb-5 project-intro fs-5">Explore my work - from full-stack apps to stunning UI designs.</p>
 
        
         <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs" role="tablist">
@@ -188,7 +201,8 @@
     <div class="row g-4">
  
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj8Modal" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj8Modal" data-aos="fade-up">
+
           <div class="ribbon">🌟 Featured</div>
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
@@ -238,7 +252,8 @@
 
       
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj2Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj2Modal" data-aos="fade-up">
+          
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -267,7 +282,7 @@
 
       
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj4Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj4Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -294,7 +309,7 @@
 
       
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj5Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj5Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -319,7 +334,7 @@
       </div>
 
         <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj8Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj8Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -360,7 +375,7 @@
 
 
         <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj9Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj9Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -391,6 +406,38 @@
         </div>
       </div>
 
+       <div class="col-md-6 col-lg-4">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj20Modal" data-aos="fade-up">
+          <div class="card-overlay-icons">
+            <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <img src="images/launchsite.png" alt="Web Project 1" class="img-fluid responsive-img">
+          <div class="card-body">
+            <h5 class="card-title">🚀 LaunchSite (Full Stack Software Showcasing Web)</h5>
+            <p class="card-text">LaunchSite is your go-to platform to sell and showcase custom software—websites, apps, and systems—designed for startups, entrepreneurs, and tech lovers to find high-performance solutions.</p>
+            <p><strong>Technologies:</strong></p>
+            <div class="mt-2">
+<span class="badge bg-secondary me-1">Next.js</span>
+<span class="badge bg-secondary me-1">Node.js</span>
+<span class="badge bg-secondary me-1">NPM</span>
+<span class="badge bg-secondary me-1">React.js</span>
+<span class="badge bg-secondary me-1">HTML5</span>
+<span class="badge bg-secondary me-1">CSS3</span>
+<span class="badge bg-secondary me-1">Lucide Icons</span>
+<span class="badge bg-secondary me-1">Framer Motion</span>
+<span class="badge bg-secondary me-1">Tailwind CSS</span>
+<span class="badge bg-secondary me-1">Vercel</span>
+
+
+            </div>
+            <div>
+              <span class="badge bg-aqua">Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </div>
@@ -401,7 +448,7 @@
 
     
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj3Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj3Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -431,7 +478,7 @@
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj6Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj6Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -457,7 +504,7 @@
 
    
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj7Modal" data-aos="fade-up">
+        <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj7Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
             <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -491,7 +538,7 @@
 
 
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projHooKnows" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projHooKnows" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -512,7 +559,7 @@
 
    
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projSnake" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projSnake" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -532,7 +579,7 @@
 
    
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projDiyana" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projDiyana" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -554,7 +601,7 @@
 
     
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projSamanala" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projSamanala" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -576,7 +623,7 @@
 
   
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projHappyTick" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projHappyTick" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -597,7 +644,7 @@
 
    
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projSmartCal" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projSmartCal" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -618,7 +665,7 @@
 
    
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#projTicTacToe" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#projTicTacToe" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -639,7 +686,7 @@
   
  
     <div class="col-md-6 col-lg-4">
-      <div class="card project-card" data-bs-toggle="modal" data-bs-target="#proj10Modal" data-aos="fade-up">
+      <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj10Modal" data-aos="fade-up">
         <div class="card-overlay-icons">
           <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
           <a href="https://github.com/shaliniarchana"><i class="fas fa-external-link-alt"></i></a>
@@ -966,6 +1013,49 @@
     </div>
   </div>
 
+   <div class="modal fade" id="proj20Modal" tabindex="-1" aria-labelledby="proj20Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-teal text-white">
+          <h5 class="modal-title" id="proj1Label">🚀 LaunchSite (Full Stack Software Showcasing Web)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/launchsite.png" class="img-fluid rounded mb-3 responsive-img" alt="Project 20 Screenshot">
+          <p><strong>Description:</strong> LaunchSite is your go-to platform to sell and showcase custom software-websites, apps, and systems—designed for startups, entrepreneurs, and tech lovers to find high-performance solutions.</p>
+          <ul>
+          <li>✅ Sell Custom Software – Websites, apps, tools, systems.</li>
+  <li>✅ Modern Product Showcases – Image sliders, animated cards.</li>
+  <li>✅ Easy Contact & Inquiry – Get client messages directly.</li>
+  <li>✅ Dark-First UI Design – Futuristic & responsive.</li>
+  <li>✅ Optimized for Speed, SEO & UI Animation</li>
+          </ul>
+			<p><strong>Technologies:</strong></p>
+		   <div class="mt-2">
+             <span class="badge bg-secondary me-1">Next.js</span>
+<span class="badge bg-secondary me-1">Node.js</span>
+<span class="badge bg-secondary me-1">NPM</span>
+<span class="badge bg-secondary me-1">React.js</span>
+<span class="badge bg-secondary me-1">HTML5</span>
+<span class="badge bg-secondary me-1">CSS3</span>
+<span class="badge bg-secondary me-1">Lucide Icons</span>
+<span class="badge bg-secondary me-1">Framer Motion</span>
+<span class="badge bg-secondary me-1">Tailwind CSS</span>
+<span class="badge bg-secondary me-1">Vercel</span>
+
+            </div>
+          <a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+       <i class="fab fa-github"></i>
+       </a>
+		<a href="https://github.com/shaliniarchana" target="_blank" onclick="event.stopPropagation();">
+  		<i class="fas fa-external-link-alt"></i>
+	   </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div class="modal fade" id="proj6Modal" tabindex="-1" aria-labelledby="proj6Label" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -1047,7 +1137,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/hoo.jpg" class="project-modal-img mb-3" alt="HooKnows App">
+        <img src="images/hoo.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="HooKnows App">
         <p>A fun and interactive mobile quiz app with different categories and difficulty levels. Tracks score, shows explanations, and features an engaging owl-themed interface for learning through play.</p>
 		  <ul>
           <li>✅ View quiz score</li>
@@ -1075,7 +1165,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/one.jpg" class="project-modal-img mb-3" alt="Snake Bite App">
+        <img src="images/one.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Snake Bite App">
         <p>This app provides essential first-aid steps and emergency contact options for snakebite victims. It features location tracking, danger zone alerts, and local hospital directions.</p>
 		   <ul>
           <li>✅ Pause/resume guidance</li>
@@ -1102,7 +1192,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/diyanapp.jpg" class="project-modal-img mb-3" alt="Diyana Bottled Water App">
+        <img src="images/diyanapp.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Diyana Bottled Water App">
         <p>This app streamlines order placements and delivery tracking for bottled water services. Customers can order, schedule deliveries, and track order status while the admin manages inventory.</p>
 		  <ul>
           <li>✅ Browse and use website inside app</li>
@@ -1129,7 +1219,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/samanala.jpg" class="project-modal-img mb-3" alt="Samanala Printers App">
+        <img src="images/samanala.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Samanala Printers App">
         <p>This mobile app helps customers place print orders, upload documents, and get real-time order updates from Samanala Printers. Admin can track orders and update status through a simple backend interface.</p>
 		  <ul>
           <li>✅ Use website through in-app browser</li>
@@ -1156,7 +1246,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/happy.jpg" class="project-modal-img mb-3" alt="Happy Tick App">
+        <img src="images/happy.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Happy Tick App">
+
         <p>A minimalist productivity and habit tracking app. Users can add daily tasks, check them off with satisfying animations, and track streaks to stay motivated.</p>
 		  <ul>
           <li>✅ Create user account</li>
@@ -1185,7 +1276,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/cal.jpg" class="project-modal-img mb-3" alt="Smart Cal App">
+        <img src="images/cal.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Smart Cal App">
+       
+
         <p>This smart calculator app features unit conversion, history tracking, basic scientific operations, and a sleek user interface optimized for mobile use.</p>
 		  <ul>
           <li>✅ Basic math functions</li>
@@ -1210,7 +1303,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/iktak.jpg" class="project-modal-img mb-3" alt="Tic Tac Toe App">
+        <img src="images/iktak.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Tic Tac Toe App">
         <p>Classic two-player game app with fun visuals and audio feedback for player actions and game results.</p>
 		  <ul>
           <li>✅ Two-player game mode</li>
@@ -1237,7 +1330,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="images/aerowave.jpg" class="project-modal-img mb-3" alt="Aero Wave App">
+        <img src="images/aerowave.jpg" class="img-fluid w-100 mb-3" style="height: 200px; object-fit: contain;" alt="Aero Wave App">
         <p>A mobile app that helps users explore, compare, and book travel options with personalized recommendations, secure payments, and itinerary saving features.</p>
 		   <ul>
           <li>✅ Acts as a travel-focused web browser</li>

@@ -39,6 +39,24 @@
       margin-bottom: 2rem;
       font-weight: 700;
     }
+   @keyframes blue-burning {
+  0% {
+    box-shadow: 0 0 20px #00bfff, 0 0 5px #00bfff inset;
+  }
+  50% {
+    box-shadow: 0 0 50px #1e90ff, 0 0 15px #1e90ff inset;
+  }
+  100% {
+    box-shadow: 0 0 20px #00bfff, 0 0 5px #00bfff inset;
+  }
+}
+
+.animate-blue-burning {
+  animation: blue-burning 3.5s infinite ease-in-out;
+  border: 2px solid #00bfff;
+  border-radius: 12px;
+}
+
   </style>
 </head>
 <body>
@@ -189,6 +207,130 @@
       <h6>C++</h6>
     </div>
   </div>
+  <!-- Existing grid remains unchanged above -->
+
+
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalNextJS">
+    <i class="fas fa-code fa-3x text-dark mb-2"></i>
+    <h6>Next.js</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalTailwind">
+    <i class="fas fa-wind fa-3x text-cyan-400 mb-2"></i>
+    <h6>Tailwind CSS</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalFramer">
+    <i class="fas fa-wave-square fa-3x text-indigo-400 mb-2"></i>
+    <h6>Framer Motion</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalShadcn">
+    <i class="fas fa-layer-group fa-3x text-purple mb-2"></i>
+    <h6>shadcn/ui</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalNPM">
+    <i class="fab fa-npm fa-3x text-danger mb-2"></i>
+    <h6>NPM</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalCSharp">
+    <i class="fas fa-code fa-3x text-secondary mb-2"></i>
+    <h6>C#</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalExpress">
+    <i class="fas fa-server fa-3x text-dark mb-2"></i>
+    <h6>Express.js</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalFirebaseAuth">
+    <i class="fas fa-user-shield fa-3x text-warning mb-2"></i>
+    <h6>Firebase Auth</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalFirebaseHosting">
+    <i class="fas fa-cloud-upload-alt fa-3x text-orange mb-2"></i>
+    <h6>Firebase Hosting</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalSupabase">
+    <i class="fas fa-database fa-3x text-green-500 mb-2"></i>
+    <h6>Supabase</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalVercel">
+    <i class="fas fa-globe fa-3x text-black mb-2"></i>
+    <h6>Vercel</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalC">
+    <i class="fas fa-terminal fa-3x text-gray-500 mb-2"></i>
+    <h6>C</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalWindowsAPI">
+    <i class="fas fa-window-restore fa-3x text-primary mb-2"></i>
+    <h6>Windows API</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalSocketIO">
+    <i class="fas fa-bolt fa-3x text-yellow-500 mb-2"></i>
+    <h6>Socket.IO</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalAI">
+    <i class="fas fa-robot fa-3x text-pink-400 mb-2"></i>
+    <h6>AI / ML</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalSEO">
+    <i class="fas fa-chart-line fa-3x text-blue-400 mb-2"></i>
+    <h6>SEO</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalFastAPI">
+    <i class="fas fa-terminal fa-3x text-gray-300 mb-2"></i>
+    <h6>FastAPI</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalElectron">
+    <i class="fas fa-atom fa-3x text-emerald-400 mb-2"></i>
+    <h6>Electron</h6>
+  </div>
+</div>
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalWix">
+    <i class="fas fa-paint-brush fa-3x text-indigo-400 mb-2"></i>
+    <h6>Wix</h6>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card p-4 shadow-sm card-skill" data-bs-toggle="modal" data-bs-target="#skillModalWordPress">
+    <i class="fab fa-wordpress fa-3x text-blue-500 mb-2"></i>
+    <h6>WordPress</h6>
+  </div>
+</div>
 </div>
 
 
@@ -228,8 +370,40 @@
     <div class="progress"><div class="progress-bar" style="background-color: #00599C; width: 80%;"></div></div>
   </div>
   <div class="mb-3">
-    <h6>Android Studio<span class="float-end">98%</span></h6>
+    <h6>Android Studio <span class="float-end">98%</span></h6>
     <div class="progress"><div class="progress-bar" style="background-color: #3DDC84; width: 98%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>React <span class="float-end">80%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #61DBFB; width: 80%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Next.js <span class="float-end">85%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #000000; width: 85%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Tailwind CSS <span class="float-end">86%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #38BDF8; width: 86%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Vercel <span class="float-end">95%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #000000; width: 95%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Git <span class="float-end">89%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #F1502F; width: 89%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>WAMP <span class="float-end">88%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #5c2d91; width: 88%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Electron <span class="float-end">90%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #47848F; width: 90%;"></div></div>
+  </div>
+  <div class="mb-3">
+    <h6>Bootstrap <span class="float-end">92%</span></h6>
+    <div class="progress"><div class="progress-bar" style="background-color: #7952B3; width: 92%;"></div></div>
   </div>
 </div>
 
@@ -238,74 +412,74 @@
 
 
   <section class="bg-light py-5">
-    <div class="container" data-aos="fade-up">
-      <h2 class="text-blue section-title text-center">Soft Skills</h2>
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-blue section-title text-center">Soft Skills</h2>
 
-      <div class="row row-cols-1 row-cols-md-3 g-4 text-center mb-4">
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Teamwork</h5>
-            <p>Works efficiently in team environments and collaborates across roles.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Time Management</h5>
-            <p>Effectively manages priorities and deadlines in fast-paced projects.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Communication</h5>
-            <p>Excellent verbal and written communication in academic and client-facing roles.</p>
-          </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 text-center mb-4">
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Teamwork</h5>
+          <p>Works efficiently in team environments and collaborates across roles.</p>
         </div>
       </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Problem Solving</h5>
-            <p>Able to analyze complex problems and find effective solutions independently.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Adaptability</h5>
-            <p>Quick to learn new tools, adapt to change, and handle unexpected challenges.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Leadership</h5>
-            <p>Experience leading teams and coordinating projects with clear guidance.</p>
-          </div>
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Time Management</h5>
+          <p>Effectively manages priorities and deadlines in fast-paced projects.</p>
         </div>
       </div>
-
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 text-center">
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Presenting</h5>
-            <p>Confident and clear presentation skills in professional and academic settings.</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Fluent in Mathematics & Physics</h5>
-            <p>Strong foundational knowledge with the ability to apply concepts practically.</p>
-          </div>
-        </div>
-		  <div class="col">
-          <div class="card p-3 shadow-sm card-skill h-100">
-            <h5>Explore new things</h5>
-            <p>Curious about new things and willing to research about them.</p>
-          </div>
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Communication</h5>
+          <p>Excellent verbal and written communication in academic and client-facing roles.</p>
         </div>
       </div>
     </div>
-	</section>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Problem Solving</h5>
+          <p>Able to analyze complex problems and find effective solutions independently.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Adaptability</h5>
+          <p>Quick to learn new tools, adapt to change, and handle unexpected challenges.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Leadership</h5>
+          <p>Experience leading teams and coordinating projects with clear guidance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 text-center">
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Presenting</h5>
+          <p>Confident and clear presentation skills in professional and academic settings.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Fluent in Mathematics & Physics</h5>
+          <p>Strong foundational knowledge with the ability to apply concepts practically.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card p-3 shadow-sm card-skill h-100 animate-blue-burning">
+          <h5>Explore new things</h5>
+          <p>Curious about new things and willing to research about them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
  
   <div class="modal fade" id="skillModalHTML" tabindex="-1" aria-hidden="true">
@@ -316,6 +490,205 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="skillModalNextJS" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Next.js</h5>
+      <p>Full-stack React framework for building scalable web applications.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalTailwind" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Tailwind CSS</h5>
+      <p>Utility-first CSS framework for rapid UI development.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalFramer" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Framer Motion</h5>
+      <p>Animation library for React to create smooth UI transitions.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalShadcn" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>shadcn/ui</h5>
+      <p>Beautifully designed React components built with Tailwind CSS and Radix UI.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalNPM" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>NPM</h5>
+      <p>Package manager for Node.js, managing JavaScript dependencies and modules.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalCSharp" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>C#</h5>
+      <p>Modern object-oriented language for web, desktop, and game development using .NET.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalExpress" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Express.js</h5>
+      <p>Minimalist Node.js framework for backend APIs and server-side applications.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalFirebaseAuth" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Firebase Auth</h5>
+      <p>User authentication system using email/password, Google, and other providers.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalFirebaseHosting" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Firebase Hosting</h5>
+      <p>Deploy secure, fast static websites and web apps with Firebase Hosting.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalSupabase" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Supabase</h5>
+      <p>Open-source Firebase alternative with Postgres, Auth, and Realtime capabilities.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalVercel" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Vercel</h5>
+      <p>Frontend hosting platform for Next.js and other modern web frameworks.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalC" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>C</h5>
+      <p>Procedural programming language for system-level development and embedded systems.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalWindowsAPI" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Windows API</h5>
+      <p>Native programming interface for Windows applications in C/C++.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalSocketIO" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Socket.IO</h5>
+      <p>Real-time, bi-directional communication between web clients and servers.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalAI" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>AI / ML</h5>
+      <p>Fundamentals of artificial intelligence and machine learning algorithms.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalSEO" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>SEO</h5>
+      <p>Search engine optimization for increasing website visibility and traffic.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalFastAPI" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>FastAPI</h5>
+      <p>Fast Python web framework for building APIs with automatic docs.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalElectron" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Electron</h5>
+      <p>Build cross-platform desktop apps using JavaScript, HTML, and CSS.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalWix" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Wix</h5>
+      <p>Drag-and-drop website builder for visually designing web pages.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalWordPress" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>WordPress</h5>
+      <p>Content management system for building and managing websites or blogs.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalCPP" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>C++</h5>
+      <p>Object-oriented programming language used in systems, games, and high-performance apps.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="skillModalSelenium" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <h5>Selenium IDE</h5>
+      <p>Automation testing tool for web applications using record-and-playback features.</p>
+    </div>
+  </div>
+</div>
+
   <div class="modal fade" id="skillModalCSS" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content p-4">
@@ -373,7 +746,6 @@
     </div>
   </div>
 
-  <!-- Additional Technical Skills Modals -->
   <div class="modal fade" id="skillModalJava" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content p-4">
