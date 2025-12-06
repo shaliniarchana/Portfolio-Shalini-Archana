@@ -150,6 +150,35 @@
   border-radius: 12px;
 }
 
+/* Equal height cards */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure card body expands */
+.project-card .card-body {
+  flex-grow: 1;
+}
+
+/* Fix spacing between rows only */
+.row {
+  row-gap: 2rem !important;
+}
+
+/* Fix spacing between columns */
+[class*="col-"] {
+  margin-bottom: 20px;
+}
+
+/* Remove extra bottom space from Systems tab */
+#systems {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
   </style>
 </head>
 
@@ -808,7 +837,8 @@
    <div class="tab-pane fade" id="systems">
     <div class="row g-4">
 
-       <div class="col-md-6 col-lg-4">
+       <div class="col-md-6 col-lg-4 h-100">
+
         <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj9Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
@@ -848,7 +878,8 @@
       </div>
 
 
-        <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 h-100">
+
         <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj21Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
@@ -889,7 +920,8 @@
 
   
 
-     <div class="col-md-6 col-lg-4">
+ <div class="col-md-6 col-lg-4 h-100">
+
         <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj24Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
@@ -933,8 +965,9 @@
       
     </div>
 
-<div class="row gy-5">
-      <div class="col-md-6 col-lg-4">
+<div class="row g-4">
+     <div class="col-md-6 col-lg-4 h-100">
+
         <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj3Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
@@ -963,8 +996,8 @@
           </div>
         </div>
       </div>
+<div class="col-md-6 col-lg-4 h-100">
 
-        <div class="col-md-6 col-lg-4">
         <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj6Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
@@ -990,7 +1023,8 @@
       </div>
 
    
-      <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4 h-100">
+
         <div class="card project-card animate-blue-burning" data-bs-toggle="modal" data-bs-target="#proj7Modal" data-aos="fade-up">
           <div class="card-overlay-icons">
             <a href="https://github.com/shaliniarchana"><i class="fab fa-github"></i></a>
