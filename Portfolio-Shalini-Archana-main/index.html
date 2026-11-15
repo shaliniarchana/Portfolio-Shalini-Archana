@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shalini Archana | New Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Shalini Archana: Creative Developer and Full Stack Software Engineer. My new portfolio has arrived.">
+<meta name="theme-color" content="#0C0C1E">
+<meta property="og:title" content="Shalini Archana | New Portfolio">
+<meta property="og:description" content="Creative Developer and Full Stack Software Engineer. My new portfolio has arrived.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234B0000'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23F3E3E2' font-family='Georgia' font-style='italic'%3ESA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--navy:#1B2E3C;--ink:#0C0C1E;--crim:#4B0000;--cream:#F3E3E2;--mute:rgba(243,227,226,.76);--line:rgba(243,227,226,.18);--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--ink)}
+body{color:var(--cream);font:300 17px/1.7 Jost,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--crim);color:var(--cream)}
+a{color:inherit;text-decoration:none}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+.bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:radial-gradient(120% 80% at 50% 0%,#14142e 0%,var(--ink) 62%)}
+.bg i{position:absolute;border-radius:50%;filter:blur(110px);animation:drift 36s ease-in-out infinite alternate}
+.bg i:nth-child(1){width:62vmax;height:62vmax;background:var(--crim);top:-24vmax;right:-20vmax;opacity:.8}
+.bg i:nth-child(2){width:56vmax;height:56vmax;background:var(--navy);bottom:-26vmax;left:-20vmax;opacity:.85;animation-duration:48s}
+.bg i:nth-child(3){width:30vmax;height:30vmax;background:var(--crim);top:40%;left:38%;opacity:.3;animation-duration:58s}
+@keyframes drift{to{transform:translate3d(6vmax,5vmax,0) scale(1.12)}}
+.orbit{position:fixed;left:50%;top:50%;z-index:0;pointer-events:none}
+.orbit b{position:absolute;border:1px solid var(--line);border-radius:50%;transform:translate(-50%,-50%);animation:spin linear infinite}
+.orbit b::after{content:"";position:absolute;top:-4px;left:50%;width:8px;height:8px;border-radius:50%;background:var(--cream);box-shadow:0 0 18px 2px rgba(243,227,226,.55)}
+.orbit b:nth-child(1){width:min(70vmin,560px);height:min(70vmin,560px);animation-duration:70s}
+.orbit b:nth-child(2){width:min(96vmin,780px);height:min(96vmin,780px);animation-duration:110s;animation-direction:reverse;opacity:.7}
+.orbit b:nth-child(3){width:min(130vmin,1040px);height:min(130vmin,1040px);animation-duration:160s;opacity:.45}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+main{position:relative;z-index:1;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(48px + env(safe-area-inset-top,0px)) 24px calc(110px + env(safe-area-inset-bottom,0px))}
+.up{animation:up 1.5s var(--ease) var(--d,0s) backwards}
+@keyframes up{from{opacity:0;transform:translateY(28px);filter:blur(6px)}}
+.eyebrow{font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:16px}
+.eyebrow::before,.eyebrow::after{content:"";width:40px;height:1px;background:var(--cream)}
+h1{font:300 clamp(3.4rem,13vw,9.5rem)/.96 "Cormorant Garamond",Georgia,serif;margin:26px 0 18px;letter-spacing:.01em}
+h1 span{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin:0 .1em}
+h1 span i{display:inline-block;font-style:normal;animation:rise 1.6s var(--ease) var(--d) backwards}
+h1 span:last-child i{font-style:italic;font-weight:400}
+@keyframes rise{from{transform:translateY(118%)}}
+.tag{font:italic 300 clamp(1.4rem,3.4vw,2.2rem) "Cormorant Garamond",Georgia,serif}
+.lead{max-width:520px;color:var(--mute);margin:16px auto 40px}
+.cta{display:flex;flex-direction:column;align-items:center;gap:20px;min-height:132px}
+.status{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:12px}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cream);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25;transform:scale(.7)}}
+.bar{width:min(260px,70vw);height:1px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--cream);transform-origin:0 50%;animation:fill 2.6s var(--ease) .9s backwards}
+@keyframes fill{from{transform:scaleX(0)}}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:16px;padding:19px 42px;border-radius:99px;border:1px solid var(--cream);background:var(--crim);font-size:13px;letter-spacing:.26em;text-transform:uppercase;cursor:pointer;animation:up 1.4s var(--ease) .1s backwards;transition:background .7s var(--ease),color .7s var(--ease),transform .7s var(--ease),box-shadow .7s var(--ease)}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(243,227,226,.38),transparent);animation:shine 5s ease-in-out 1.6s infinite}
+@keyframes shine{0%{left:-70%}30%,100%{left:140%}}
+.btn:hover,.btn:focus-visible{background:var(--cream);color:var(--ink);transform:translateY(-4px);box-shadow:0 26px 50px -18px rgba(243,227,226,.4);outline:none}
+.btn i{font-style:normal;font-size:1.3em;line-height:1;transition:transform .7s var(--ease)}
+.btn:hover i{transform:translateX(8px)}
+.note{font-size:13px;color:var(--mute);letter-spacing:.06em;animation:up 1.4s var(--ease) .5s backwards}
+.s2{display:none}
+body.ready .s1{display:none}body.ready .s2{display:flex}
+body.ready .bar{display:none}
+body.go main{transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s;opacity:0;transform:scale(1.03);filter:blur(8px)}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:center;gap:clamp(18px,4vw,44px);flex-wrap:wrap;padding:20px 24px calc(20px + env(safe-area-inset-bottom,0px));font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);animation:up 1.4s var(--ease) 1.2s backwards}
+footer a{position:relative;padding:4px 0;transition:color .5s}
+footer a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--cream);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
+footer a:hover{color:var(--cream)}footer a:hover::after{transform:scaleX(1);transform-origin:left}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.s1,.bar{display:none}.s2{display:flex}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="orbit" aria-hidden="true"><b></b><b></b><b></b></div>
+
+<main>
+  <div class="eyebrow up" style="--d:.2s">Portfolio · 2026</div>
+  <h1 aria-label="Shalini Archana"><span><i style="--d:.4s">Shalini</i></span> <span><i style="--d:.6s">Archana</i></span></h1>
+  <p class="tag up" style="--d:1s">A new portfolio has arrived.</p>
+  <p class="lead up" style="--d:1.2s">Web platforms, Android apps, accessibility tools and systems, now in one refined new home.</p>
+
+  <div class="cta">
+    <!-- ✏️ CHANGE THIS LINK to your new site's Vercel URL -->
+    <div class="s1 cta" style="min-height:0"><div class="status">Preparing the new experience</div><div class="bar"><i></i></div></div>
+    <div class="s2 cta" style="min-height:0">
+      <a id="enter" class="btn" href="https://YOUR-NEW-SITE.vercel.app">Enter the new portfolio <i>→</i></a>
+      <div class="note" id="note"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="mailto:sliitshalini@gmail.com">Email</a>
+  <a href="https://www.linkedin.com/in/shalini-vidanaarachchi-417a08314/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/shaliniarchana" target="_blank" rel="noopener">GitHub</a>
+</footer>
+
+<script>
+(function () {
+  var b = document.body, a = document.getElementById("enter"), n = document.getElementById("note");
+  try { n.textContent = "Opens " + new URL(a.href).hostname; } catch (e) {}
+  setTimeout(function () { b.classList.add("ready"); }, 3500);
+  a.addEventListener("click", function (e) {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    b.classList.add("go");
+    setTimeout(function () { location.href = a.href; }, 650);
+  });
+})();
+</script>
+<noscript><style>.s1{display:none}.s2{display:flex}</style></noscript>
+</body>
+</html>

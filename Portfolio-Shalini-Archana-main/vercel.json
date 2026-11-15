@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": false },
+    { "source": "/about.html", "destination": "/", "permanent": false },
+    { "source": "/projects.html", "destination": "/", "permanent": false },
+    { "source": "/skills.html", "destination": "/", "permanent": false },
+    { "source": "/resume.html", "destination": "/", "permanent": false },
+    { "source": "/contact.html", "destination": "/", "permanent": false }
+  ]
+}
